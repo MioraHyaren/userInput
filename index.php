@@ -18,7 +18,7 @@
          <p id="cont" class="label label-info"></p><br>
         <labe>Email :</label><input type="text" class="form-control"  name="email">
              <p id="content" class="label label-info"></p><br>
-        <label>Password:</label><input type="text" class="form-control"  name="pass">
+         <label>Password:</label><input type="Password" class="form-control"  name="pass" id="pass">
          <p id="content" class="label label-success"></p><br>
         <button type="submit" class="btn btn-block btn-info">Terminer</button>
 </form>
