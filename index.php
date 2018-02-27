@@ -8,6 +8,7 @@
 </head>
 <body>
 <div class="col-sm-4">
+<h1 class="text-center">INSCRIPTION</h1>
 <form id="form" action="save.php" method="POST" class="well form-group" >
         <label for="nom">Name : </label>
         <input type="text" id="nom" name="nom" class="form-control col-sm-4">
@@ -18,7 +19,7 @@
          <p id="cont" class="label label-info"></p><br>
         <labe>Email :</label><input type="text" class="form-control"  name="email">
              <p id="content" class="label label-info"></p><br>
-         <label>Password:</label><input type="Password" class="form-control"  name="pass" id="pass">
+        <label>Password:</label><input type="Password" class="form-control"  name="pass" id="pass">
          <p id="content" class="label label-success"></p><br>
         <button type="submit" class="btn btn-block btn-info">Terminer</button>
 </form>
@@ -47,5 +48,3 @@
     </script>
 </body>
 </html>
-
-
