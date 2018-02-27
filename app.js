@@ -1,13 +1,17 @@
-$(document).ready(function() {
-    alert('js ok');
-});
-
-function validatePseudo(value){
-    var pattern;
-    if(value == pattern){
-        return true;
+jQuery.validator.setDefaults({
+  debug: true,
+  success: "valid"
+});     
+$("document").ready(function()
+    { 
+      $("input").attr("required", "true");
+      $( "#form" ).validate({
+  rules: {
+    nom: {
+    required: true,
+    minlength: 10,
+    maxlength: 20
     }
-    else{
-        return false;
-    }
-}
+  }
+})
+      })  ;
