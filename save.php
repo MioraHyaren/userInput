@@ -1,16 +1,14 @@
 <?php
 
-    var_dump($_POST);
+    $serveur="localhost";
+	$login="root";
+	$pass="";
+	$dbname = "my_app";
+
     $name=$_POST["nam"]
     $pseudo=$_POST["pseudo"];
     $email=$_POST["email"];
     $pass=$_POST["pass"];
-   
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "my_app";
-
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -19,7 +17,7 @@ try {
     */
     
     $sql = $conn->prepare( "INSERT INTO user_app(name_user,user_pseudo,user_email,user_password) VALUES (:nam,:pseudo, :email, :pass)");
-    $sql->bindParam(':name', $name);
+    $sql->bindParam(':nam', $name);
     $sql->bindParam(':pseudo', $pseudo);
     $sql->bindParam(':email', $email);
     $sql->bindParam(':pass', $pass);
